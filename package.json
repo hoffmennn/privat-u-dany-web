@@ -1,0 +1,25 @@
+{
+  "name": "privat-u-dany-web",
+  "version": "1.0.0",
+  "description": "Privát u Dany – web",
+  "scripts": {
+    "build": "tailwindcss -i ./src/styles.css -o ./css/styles.css --minify",
+    "dev": "tailwindcss -i ./src/styles.css -o ./css/styles.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hoffmennn/privat-u-dany-web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/hoffmennn/privat-u-dany-web/issues"
+  },
+  "homepage": "https://github.com/hoffmennn/privat-u-dany-web#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.19"
+  },
+  "private": true
+}
