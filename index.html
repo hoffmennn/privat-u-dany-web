@@ -34,7 +34,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;700&amp;family=Alegreya+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet">
 
-  <link rel="preload" as="image" href="public/img/exterior-autumn.webp" fetchpriority="high">
+  <link rel="preload" as="image" href="public/img/hero.webp" imagesrcset="public/img/hero-1200.webp 1200w, public/img/hero.webp 2400w" imagesizes="100vw" fetchpriority="high">
   <link rel="stylesheet" href="css/styles.css">
 
   <!-- Štruktúrované dáta -->
@@ -112,7 +112,7 @@
 
     <!-- ============ HERO ============ -->
     <section class="relative h-[78vh] min-h-[480px] max-h-[720px] overflow-hidden" aria-label="Úvod">
-      <img src="public/img/exterior-autumn.webp" alt="Drevenica Privát u Dany v Ždiari na jeseň" class="absolute inset-0 h-full w-full object-cover" width="600" height="438" fetchpriority="high">
+      <img src="public/img/hero.webp" srcset="public/img/hero-1200.webp 1200w, public/img/hero.webp 2400w" sizes="100vw" alt="Drevenica Privát u Dany v Ždiari na jeseň" class="absolute inset-0 h-full w-full object-cover" width="2400" height="1753" fetchpriority="high">
       <div class="absolute inset-0 bg-[linear-gradient(180deg,rgba(20,14,8,.42)_0%,rgba(20,14,8,.12)_45%,rgba(20,14,8,.72)_100%)]"></div>
 
       <div class="container-page relative flex h-full flex-col justify-end gap-8 pb-8 lg:flex-row lg:items-end lg:justify-between lg:gap-10 lg:pb-11">
@@ -265,8 +265,8 @@
         </a>
       </div>
 
-      <a href="public/img/exterior-winter.webp" class="photo h-[300px] sm:h-[400px] lg:h-[480px]" data-lightbox="okolie" data-caption="Drevenica Privát u Dany v zime">
-        <img src="public/img/exterior-winter.webp" alt="Drevenica Privát u Dany v zime" loading="lazy" width="711" height="440">
+      <a href="public/img/chata-zima.webp" class="photo h-[300px] sm:h-[400px] lg:h-[480px]" data-lightbox="okolie" data-caption="Drevenica Privát u Dany v zime">
+        <img src="public/img/chata-zima.webp" srcset="public/img/chata-zima-1200.webp 1200w, public/img/chata-zima.webp 2400w" sizes="100vw" alt="Drevenica Privát u Dany v zime" loading="lazy" width="2400" height="1485">
       </a>
     </section>
 
@@ -343,37 +343,39 @@
 
     <!-- ============ KONTAKT ============ -->
     <section id="kontakt" class="container-page py-16 lg:py-[76px]">
-      <div class="grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)] lg:gap-14">
-        <div class="flex flex-col gap-4">
-          <h2 class="h2">Kontaktujte nás</h2>
-          <p class="lead">Odpovedáme obvykle do 24 hodín.</p>
+      <div class="grid gap-10 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)] lg:gap-14">
+        <div class="flex flex-col gap-8">
+          <div class="flex flex-col gap-4">
+            <h2 class="h2">Kontaktujte nás</h2>
+            <p class="lead">Odpovedáme obvykle do 24 hodín.</p>
+          </div>
+          <address class="grid gap-x-10 gap-y-6 not-italic sm:grid-cols-2 lg:grid-cols-1">
+            <div class="flex flex-col gap-1.5 border-b border-line pb-5">
+              <span class="contact-label">Telefón</span>
+              <a href="tel:+421905429202" class="font-serif text-[26px] text-wood hover:underline">+421 905 429 202</a>
+              <span class="text-[15px] text-ink-soft">Dana Spirčáková</span>
+            </div>
+            <div class="flex min-w-0 flex-col gap-1.5 border-b border-line pb-5">
+              <span class="contact-label">E-mail</span>
+              <a href="mailto:danaspircakova@azet.sk" class="break-words font-serif text-[22px] text-wood hover:underline sm:text-[24px]">danaspircakova@azet.sk</a>
+            </div>
+            <div class="flex flex-col gap-1.5">
+              <span class="contact-label">Adresa</span>
+              <span class="text-[17px] leading-relaxed">Ždiar 792<br>059 55 Ždiar</span>
+              <a href="https://www.google.com/maps/search/?api=1&amp;query=49.271340,20.273522" target="_blank" rel="noopener" class="text-[15px] text-wood hover:underline">Navigovať v Google Maps →</a>
+            </div>
+          </address>
         </div>
-        <address class="grid gap-x-10 gap-y-8 not-italic sm:grid-cols-2 lg:pt-1.5">
-          <div class="flex flex-col gap-1.5 border-b border-line pb-5">
-            <span class="contact-label">Telefón</span>
-            <a href="tel:+421905429202" class="font-serif text-[26px] text-wood hover:underline">+421 905 429 202</a>
-            <span class="text-[15px] text-ink-soft">Dana Spirčáková</span>
-          </div>
-          <div class="flex min-w-0 flex-col gap-1.5 border-b border-line pb-5">
-            <span class="contact-label">E-mail</span>
-            <a href="mailto:danaspircakova@azet.sk" class="break-words font-serif text-[22px] text-wood hover:underline sm:text-[24px]">danaspircakova@azet.sk</a>
-          </div>
-          <div class="flex flex-col gap-1.5">
-            <span class="contact-label">Adresa</span>
-            <span class="text-[17px] leading-relaxed">Ždiar 792<br>059 55 Ždiar</span>
-            <a href="#mapa" class="text-[15px] text-wood hover:underline">Zobraziť na mape →</a>
-          </div>
-        </address>
-      </div>
 
-      <div id="mapa" class="mt-12 aspect-[4/3] w-full overflow-hidden border border-line bg-line sm:aspect-[16/9] lg:aspect-[21/9]">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d77923.90745388453!2d20.2497306566531!3d49.27136688251265!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473e197a9aa98129%3A0x4e0a13eeb9e02218!2sPriv%C3%A1t%20u%20Dany!5e1!3m2!1ssk!2ssk!4v1790106866425!5m2!1ssk!2ssk"
-          title="Mapa – Privát u Dany, Ždiar 792"
-          class="h-full w-full border-0"
-          allowfullscreen
-          loading="lazy"
-          referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        <div id="mapa" class="aspect-[4/3] w-full overflow-hidden border border-line bg-line sm:aspect-[16/9] lg:aspect-auto lg:h-full lg:min-h-[480px]">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d77923.90745388453!2d20.2497306566531!3d49.27136688251265!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473e197a9aa98129%3A0x4e0a13eeb9e02218!2sPriv%C3%A1t%20u%20Dany!5e1!3m2!1ssk!2ssk!4v1790106866425!5m2!1ssk!2ssk"
+            title="Mapa – Privát u Dany, Ždiar 792"
+            class="h-full w-full border-0"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
       </div>
     </section>
   </main>
